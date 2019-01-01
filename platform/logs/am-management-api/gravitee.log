@@ -1,0 +1,622 @@
+13:25:03.653 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+13:25:03.685 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-management-api/config/gravitee.yml
+13:25:04.961 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+13:25:05.379 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+13:25:05.435 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+13:25:05.438 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+13:25:05.452 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+13:25:05.454 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+13:25:05.467 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.management.repository.plugin.RepositoryPluginHandler
+13:25:05.470 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+13:25:05.480 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+13:25:11.703 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+13:25:11.706 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+13:25:15.408 [graviteeio-node] [] INFO  org.eclipse.jetty.util.log - Logging initialized @24420ms
+13:25:15.722 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener SecurityDomainHandlerCollection for event type class io.gravitee.am.management.core.event.DomainEvent
+13:25:16.795 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Management API...
+13:25:16.800 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API is now starting...
+13:25:16.802 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginEventListener
+13:25:16.814 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:25:16.817 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:25:16.818 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginRegistry
+13:25:16.820 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:25:16.822 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:25:16.862 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-management-api/plugins
+13:25:16.887 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+13:25:17.242 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+13:25:17.288 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+13:25:17.376 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+13:25:17.384 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+13:25:17.390 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+13:25:17.397 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+13:25:17.424 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+13:25:17.430 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-management-api-services-sync-2.1.1.zip
+13:25:17.457 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-management-api-services-sync-2.1.1/gravitee-am-management-api-services-sync-2.1.1.jar
+13:25:17.459 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+13:25:17.532 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+13:25:17.544 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+13:25:17.549 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+13:25:17.557 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+13:25:17.565 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+13:25:17.567 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-monitoring-1.1.0.zip
+13:25:17.592 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+13:25:17.609 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+13:25:17.708 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+13:25:17.724 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+13:25:17.734 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+13:25:17.742 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+13:25:17.758 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+13:25:17.761 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+13:25:17.767 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+13:25:17.768 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+13:25:17.769 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+13:25:17.771 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+13:25:17.772 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+13:25:17.773 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+13:25:17.774 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+13:25:17.775 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+13:25:17.776 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+13:25:17.776 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+13:25:17.777 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+13:25:17.778 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+13:25:17.780 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+13:25:17.782 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+13:25:17.783 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+13:25:17.788 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+13:25:17.792 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+13:25:17.797 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+13:25:17.799 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+13:25:17.833 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Register a new repository: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+13:25:22.880 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+13:25:23.265 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+13:25:23.270 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+13:25:23.300 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+13:25:23.322 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+13:25:23.484 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+13:25:23.486 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+13:25:23.487 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+13:25:23.488 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+13:25:23.500 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+13:25:25.077 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+13:25:25.376 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.management.services.sync.ScheduledSyncService]
+13:25:25.762 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+13:25:25.771 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+13:25:25.772 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+13:25:25.779 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+13:25:25.781 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+13:25:25.792 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+13:25:25.798 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+13:25:25.801 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ServiceManager
+13:25:25.811 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+13:25:25.821 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+13:25:25.829 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+13:25:25.863 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+13:25:25.874 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+13:25:25.881 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+13:25:25.889 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+13:25:26.060 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+13:25:26.064 [graviteeio-node] [] INFO  i.g.a.m.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+13:25:26.161 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ManagementService
+13:25:26.168 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+13:25:26.501 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ReporterManager
+13:25:26.503 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+13:25:26.510 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: HttpServer
+13:25:26.511 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+13:25:26.512 [graviteeio-node] [] INFO  i.g.a.m.core.http.HttpServerFactory - Loading instances for type io.gravitee.am.management.core.http.HttpServer
+13:25:26.592 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+13:25:27.518 [graviteeio-node] [] INFO  i.g.a.m.c.c.ContextFactoryRegistry - Loading instances for type io.gravitee.am.management.core.context.ContextFactory
+13:25:28.721 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+13:25:28.905 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+13:25:28.910 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+13:25:28.960 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18093
+13:25:29.141 [graviteeio-node] [] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /opt/graviteeio-am-management-api/logs/gravitee_accesslog_2018_12_31.log
+13:25:32.020 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger.json'], []
+13:25:32.569 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@366d8b97, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e869098, org.springframework.security.web.header.HeaderWriterFilter@1f53481b, org.springframework.web.filter.CorsFilter@feb98ef, org.springframework.security.web.authentication.logout.LogoutFilter@6192a5d5, io.gravitee.am.management.handlers.management.api.spring.security.filter.JWTAuthenticationFilter@7654f833, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d497a91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b0f2299, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@571a01f9, org.springframework.security.web.session.SessionManagementFilter@6f70a21b, org.springframework.security.web.access.ExceptionTranslationFilter@37468787, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61bfc9bf]
+13:25:32.747 [graviteeio-node] [] INFO  i.g.a.m.h.m.a.c.CertificateManager - Initializing certificate providers
+13:25:42.525 [graviteeio-node] [] INFO  o.e.j.server.handler.ContextHandler - Started i.g.a.m.j.h.ManagementContextHandler@43a0a32d{/management,null,AVAILABLE}
+13:25:42.610 [graviteeio-node] [] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7dca4893{HTTP/1.1,[http/1.1]}{0.0.0.0:8093}
+13:25:42.612 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - Started @51645ms
+13:25:42.613 [graviteeio-node] [] INFO  i.g.a.m.jetty.JettyHttpServer - HTTP Server is now started and listening on port 8093
+13:25:42.614 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: InitializerService
+13:25:42.615 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Upgrader service
+13:25:42.633 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.InitializeUpgrader
+13:25:42.650 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - Looking for a registered admin domain
+13:25:42.670 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - admin domain does not exists. Creating it.
+13:25:43.340 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - Create an user-inline provider
+13:25:43.501 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - Associate user-inline provider to previously created domain
+13:25:43.864 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - Set master flag for security domain admin
+13:25:43.989 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.ScopeUpgrader
+13:25:43.991 [graviteeio-node] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Applying scope upgrade
+13:25:44.722 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.CertificateUpgrader
+13:25:44.726 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.CertificateUpgrader - Applying certificate upgrade
+13:25:44.736 [Thread-9] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Looking for scopes for domain id[admin] name[admin]
+13:25:44.756 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.OpenIDScopeUpgrader
+13:25:44.759 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.OpenIDScopeUpgrader - Applying OIDC scope upgrade
+13:25:44.984 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API id[a04862bd-1e4d-47be-8862-bd1e4d17be89] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 28182 ms.
+13:25:46.861 [sync-1] [admin] INFO  i.g.a.m.h.a.SecurityConfiguration - Loading identity providers to handle user authentication
+13:25:46.951 [sync-1] [admin] INFO  i.g.a.m.h.a.s.i.IdentityProviderManagerImpl - Initializing identity providers for domain admin
+13:25:46.991 [sync-1] [admin] INFO  i.g.a.m.h.a.s.i.IdentityProviderManagerImpl - 	Initializing identity provider: Inline users [inline-am-idp]
+13:25:50.979 [sync-1] [admin] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/authorize'], Ant [pattern='/login'], Ant [pattern='/login/callback'], Ant [pattern='/logout']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e29e176, org.springframework.security.web.context.SecurityContextPersistenceFilter@662cdce8, org.springframework.security.web.header.HeaderWriterFilter@39b99948, org.springframework.security.web.csrf.CsrfFilter@55cd3074, org.springframework.security.web.authentication.logout.LogoutFilter@4c2de2f6, io.gravitee.am.management.handlers.admin.filter.OAuth2ClientAuthenticationFilter@4a73ef9e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53f159a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66bb01d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13bdb792, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@461fefd7, org.springframework.security.web.session.SessionManagementFilter@54b509b, org.springframework.security.web.access.ExceptionTranslationFilter@31e63e3f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@500e69d7]
+13:25:51.037 [sync-1] [admin] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/token'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72ba8cc0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ca96fdd, org.springframework.security.web.header.HeaderWriterFilter@319c268, org.springframework.security.web.authentication.logout.LogoutFilter@6b6919e4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@570c72e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48749b84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5330a60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@145fc174, org.springframework.security.web.session.SessionManagementFilter@3096bbb6, org.springframework.security.web.access.ExceptionTranslationFilter@537ae468, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5046c8b3]
+13:25:51.347 [sync-1] [admin] INFO  o.e.j.server.handler.ContextHandler - Started i.g.a.m.j.h.s.SecurityDomainHandler@b137002{/admin,null,AVAILABLE}
+13:25:51.349 [sync-1] [admin] INFO  i.g.a.m.j.h.s.SecurityDomainHandlerCollection - Security domain admin has been been published on path /admin
+13:26:30.808 [graviteeio-finalizer] [] INFO  i.g.a.m.s.c.ManagementContainer - Shutting-down Gravitee.io - AM Management API...
+13:26:30.811 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API is stopping
+13:26:30.823 [Thread-33] [] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7dca4893{HTTP/1.1,[http/1.1]}{0.0.0.0:8093}
+13:26:30.827 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: InitializerService
+13:26:30.839 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Upgrader service
+13:26:30.843 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: HttpServer
+13:26:30.878 [Thread-33] [] INFO  o.e.j.server.handler.ContextHandler - Stopped i.g.a.m.j.h.s.SecurityDomainHandler@b137002{/admin,null,UNAVAILABLE}
+13:26:30.948 [Thread-33] [] INFO  o.e.j.server.handler.ContextHandler - Stopped i.g.a.m.j.h.ManagementContextHandler@43a0a32d{/management,null,UNAVAILABLE}
+13:26:30.982 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: ReporterManager
+13:26:30.986 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Reporter service
+13:26:31.004 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: ManagementService
+13:26:31.005 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Management API service
+13:26:31.007 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: ServiceManager
+13:26:31.012 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Plugins - Services Manager
+13:26:31.014 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor
+13:26:31.015 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Monitoring Service
+13:26:31.016 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor : DONE
+13:26:31.017 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Health-check service
+13:26:31.018 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Sync Service
+13:26:31.019 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: PluginRegistry
+13:26:31.019 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:26:31.020 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: PluginEventListener
+13:26:31.021 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginEventListener
+13:26:31.022 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API stopped
+13:26:51.427 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+13:26:51.508 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-management-api/config/gravitee.yml
+13:26:52.264 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+13:26:52.895 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+13:26:52.921 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+13:26:52.924 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+13:26:52.937 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+13:26:52.951 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+13:26:52.956 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.management.repository.plugin.RepositoryPluginHandler
+13:26:52.962 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+13:26:52.986 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+13:27:01.066 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+13:27:01.068 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+13:27:04.095 [graviteeio-node] [] INFO  org.eclipse.jetty.util.log - Logging initialized @21595ms
+13:27:04.409 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener SecurityDomainHandlerCollection for event type class io.gravitee.am.management.core.event.DomainEvent
+13:27:05.097 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Management API...
+13:27:05.105 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API is now starting...
+13:27:05.111 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginEventListener
+13:27:05.126 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:27:05.132 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:27:05.135 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginRegistry
+13:27:05.143 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:27:05.148 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:27:05.150 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-management-api/plugins
+13:27:05.160 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+13:27:05.622 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+13:27:05.674 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+13:27:05.810 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+13:27:05.847 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+13:27:05.882 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+13:27:05.909 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+13:27:05.978 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+13:27:05.998 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-management-api-services-sync-2.1.1.zip
+13:27:06.042 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-management-api-services-sync-2.1.1/gravitee-am-management-api-services-sync-2.1.1.jar
+13:27:06.048 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+13:27:06.115 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+13:27:06.188 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+13:27:06.213 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+13:27:06.226 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+13:27:06.230 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+13:27:06.236 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-monitoring-1.1.0.zip
+13:27:06.240 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+13:27:06.252 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+13:27:06.315 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+13:27:06.323 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+13:27:06.367 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+13:27:06.369 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+13:27:06.383 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+13:27:06.413 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+13:27:06.424 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+13:27:06.435 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+13:27:06.436 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+13:27:06.436 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+13:27:06.437 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+13:27:06.438 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+13:27:06.439 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+13:27:06.440 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+13:27:06.445 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+13:27:06.446 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+13:27:06.449 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+13:27:06.463 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+13:27:06.464 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+13:27:06.466 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+13:27:06.466 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+13:27:06.467 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+13:27:06.469 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+13:27:06.474 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+13:27:06.485 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+13:27:06.539 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Register a new repository: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+13:27:12.342 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+13:27:12.446 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+13:27:12.460 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+13:27:12.622 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+13:27:12.645 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+13:27:12.657 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+13:27:12.671 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+13:27:12.673 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+13:27:12.674 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+13:27:12.675 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+13:27:13.591 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+13:27:14.073 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.management.services.sync.ScheduledSyncService]
+13:27:14.423 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+13:27:14.437 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+13:27:14.438 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+13:27:14.451 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+13:27:14.463 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+13:27:14.479 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+13:27:14.480 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+13:27:14.485 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ServiceManager
+13:27:14.488 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+13:27:14.515 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+13:27:14.540 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+13:27:14.546 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+13:27:14.570 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+13:27:14.576 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+13:27:14.598 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+13:27:14.917 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+13:27:14.922 [graviteeio-node] [] INFO  i.g.a.m.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+13:27:14.986 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ManagementService
+13:27:14.999 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+13:27:15.756 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ReporterManager
+13:27:15.758 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+13:27:15.769 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+13:27:15.794 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: HttpServer
+13:27:15.796 [graviteeio-node] [] INFO  i.g.a.m.core.http.HttpServerFactory - Loading instances for type io.gravitee.am.management.core.http.HttpServer
+13:27:15.977 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+13:27:16.921 [graviteeio-node] [] INFO  i.g.a.m.c.c.ContextFactoryRegistry - Loading instances for type io.gravitee.am.management.core.context.ContextFactory
+13:27:17.828 [graviteeio-node] [] INFO  o.e.j.server.handler.ContextHandler - Stopped i.g.a.m.j.h.s.SecurityDomainHandler@66213a0d{/admin,null,UNAVAILABLE}
+13:27:17.830 [sync-1] [admin] ERROR i.g.a.m.j.h.s.SecurityDomainHandlerCollection - Unable to add a new handler
+java.lang.NullPointerException: null
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:759)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:262)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at io.gravitee.am.management.jetty.handler.security.SecurityDomainHandlerCollection.addHandler(SecurityDomainHandlerCollection.java:103)
+	at io.gravitee.am.management.jetty.handler.security.SecurityDomainHandlerCollection.create(SecurityDomainHandlerCollection.java:80)
+	at io.gravitee.am.management.jetty.handler.security.SecurityDomainHandlerCollection.onEvent(SecurityDomainHandlerCollection.java:64)
+	at io.gravitee.common.event.impl.EventManagerImpl.publishEvent(EventManagerImpl.java:44)
+	at io.gravitee.common.event.impl.EventManagerImpl.publishEvent(EventManagerImpl.java:36)
+	at io.gravitee.am.management.services.sync.SyncManager.refresh(SyncManager.java:52)
+	at io.gravitee.am.management.services.sync.ScheduledSyncService.doSync(ScheduledSyncService.java:79)
+	at io.gravitee.am.management.services.sync.ScheduledSyncService.run(ScheduledSyncService.java:69)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+13:27:17.838 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+13:27:18.115 [graviteeio-node] [] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /opt/graviteeio-am-management-api/logs/gravitee_accesslog_2018_12_31.log
+13:27:18.155 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+13:27:18.159 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+13:27:18.160 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18093
+13:27:19.641 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger.json'], []
+13:27:19.938 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b039c6d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cc36c19, org.springframework.security.web.header.HeaderWriterFilter@71e4b308, org.springframework.web.filter.CorsFilter@7f5b9db, org.springframework.security.web.authentication.logout.LogoutFilter@1f53481b, io.gravitee.am.management.handlers.management.api.spring.security.filter.JWTAuthenticationFilter@507d64aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2100d047, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bc426f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37045b48, org.springframework.security.web.session.SessionManagementFilter@94e51e8, org.springframework.security.web.access.ExceptionTranslationFilter@43d9f1a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c87fdf2]
+13:27:20.030 [graviteeio-node] [] INFO  i.g.a.m.h.m.a.c.CertificateManager - Initializing certificate providers
+13:27:27.044 [graviteeio-node] [] INFO  o.e.j.server.handler.ContextHandler - Started i.g.a.m.j.h.ManagementContextHandler@44924587{/management,null,AVAILABLE}
+13:27:27.064 [graviteeio-node] [] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@736b21ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8093}
+13:27:27.076 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - Started @44576ms
+13:27:27.083 [graviteeio-node] [] INFO  i.g.a.m.jetty.JettyHttpServer - HTTP Server is now started and listening on port 8093
+13:27:27.083 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: InitializerService
+13:27:27.085 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Upgrader service
+13:27:27.099 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.InitializeUpgrader
+13:27:27.100 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - Looking for a registered admin domain
+13:27:27.107 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - admin domain already exists. Apply required upgrades.
+13:27:27.129 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.ScopeUpgrader
+13:27:27.135 [graviteeio-node] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Applying scope upgrade
+13:27:27.361 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.CertificateUpgrader
+13:27:27.380 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.CertificateUpgrader - Applying certificate upgrade
+13:27:27.383 [Thread-10] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Looking for scopes for domain id[admin] name[admin]
+13:27:27.393 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.OpenIDScopeUpgrader
+13:27:27.407 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.OpenIDScopeUpgrader - Applying OIDC scope upgrade
+13:27:27.411 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API id[36e1550b-6a03-4834-a155-0b6a03f834e8] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 22299 ms.
+14:52:43.916 [graviteeio-finalizer] [] INFO  i.g.a.m.s.c.ManagementContainer - Shutting-down Gravitee.io - AM Management API...
+14:52:43.920 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API is stopping
+14:52:43.936 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: InitializerService
+14:52:43.939 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Upgrader service
+14:52:43.941 [Thread-23] [] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@736b21ee{HTTP/1.1,[http/1.1]}{0.0.0.0:8093}
+14:52:43.941 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: HttpServer
+14:52:43.995 [Thread-23] [] INFO  o.e.j.server.handler.ContextHandler - Stopped i.g.a.m.j.h.ManagementContextHandler@44924587{/management,null,UNAVAILABLE}
+14:52:44.004 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: ReporterManager
+14:52:44.005 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Reporter service
+14:52:44.008 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: ManagementService
+14:52:44.009 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Management API service
+14:52:44.010 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: ServiceManager
+14:52:44.011 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Plugins - Services Manager
+14:52:44.012 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor
+14:52:44.019 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Monitoring Service
+14:52:44.025 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor : DONE
+14:52:44.026 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Health-check service
+14:52:44.027 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Sync Service
+14:52:44.028 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: PluginRegistry
+14:52:44.030 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginRegistryImpl
+14:52:44.031 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - 	Stopping component: PluginEventListener
+14:52:44.032 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginEventListener
+14:52:44.033 [graviteeio-finalizer] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API stopped
+15:09:49.702 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+15:09:49.771 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-management-api/config/gravitee.yml
+15:09:50.645 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+15:09:51.122 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+15:09:51.130 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+15:09:51.134 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+15:09:51.137 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+15:09:51.139 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+15:09:51.143 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.management.repository.plugin.RepositoryPluginHandler
+15:09:51.146 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+15:09:51.148 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+15:09:56.146 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+15:09:56.160 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+15:09:58.273 [graviteeio-node] [] INFO  org.eclipse.jetty.util.log - Logging initialized @18290ms
+15:09:58.429 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener SecurityDomainHandlerCollection for event type class io.gravitee.am.management.core.event.DomainEvent
+15:09:58.911 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Management API...
+15:09:58.913 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API is now starting...
+15:09:58.914 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginEventListener
+15:09:58.915 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+15:09:58.916 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+15:09:58.916 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginRegistry
+15:09:58.917 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+15:09:58.918 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+15:09:58.919 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-management-api/plugins
+15:09:58.925 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+15:09:59.314 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+15:09:59.335 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+15:09:59.396 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+15:09:59.409 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+15:09:59.417 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+15:09:59.422 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+15:09:59.442 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+15:09:59.445 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-management-api-services-sync-2.1.1.zip
+15:09:59.476 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-management-api-services-sync-2.1.1/gravitee-am-management-api-services-sync-2.1.1.jar
+15:09:59.480 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+15:09:59.542 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+15:09:59.546 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+15:09:59.558 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+15:09:59.565 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+15:09:59.582 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+15:09:59.585 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-monitoring-1.1.0.zip
+15:09:59.595 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+15:09:59.598 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+15:09:59.734 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+15:09:59.738 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+15:09:59.752 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+15:09:59.754 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+15:09:59.763 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+15:09:59.765 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+15:09:59.787 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+15:09:59.788 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+15:09:59.792 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+15:09:59.794 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+15:09:59.795 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+15:09:59.796 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+15:09:59.797 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+15:09:59.798 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+15:09:59.799 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+15:09:59.800 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+15:09:59.803 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+15:09:59.804 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+15:09:59.819 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+15:09:59.820 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+15:09:59.821 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+15:09:59.822 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+15:09:59.823 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+15:09:59.824 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+15:09:59.825 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+15:09:59.834 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Register a new repository: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+15:10:02.747 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+15:10:02.775 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+15:10:02.802 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+15:10:02.806 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+15:10:02.809 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+15:10:02.816 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+15:10:02.824 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+15:10:02.825 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+15:10:02.826 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+15:10:02.828 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+15:10:03.558 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+15:10:03.753 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.management.services.sync.ScheduledSyncService]
+15:10:04.036 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+15:10:04.083 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+15:10:04.090 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+15:10:04.095 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+15:10:04.099 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+15:10:04.111 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+15:10:04.119 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+15:10:04.129 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ServiceManager
+15:10:04.130 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+15:10:04.139 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+15:10:04.148 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+15:10:04.180 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+15:10:04.193 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+15:10:04.196 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+15:10:04.249 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+15:10:04.349 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+15:10:04.427 [graviteeio-node] [] INFO  i.g.a.m.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+15:10:04.439 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ManagementService
+15:10:04.440 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+15:10:04.504 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ReporterManager
+15:10:04.507 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+15:10:04.529 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+15:10:04.541 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: HttpServer
+15:10:04.582 [graviteeio-node] [] INFO  i.g.a.m.core.http.HttpServerFactory - Loading instances for type io.gravitee.am.management.core.http.HttpServer
+15:10:04.864 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+15:10:05.348 [graviteeio-node] [] INFO  i.g.a.m.c.c.ContextFactoryRegistry - Loading instances for type io.gravitee.am.management.core.context.ContextFactory
+15:10:06.729 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+15:10:06.739 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+15:10:06.762 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18093
+15:10:07.071 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+15:10:07.540 [graviteeio-node] [] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /opt/graviteeio-am-management-api/logs/gravitee_accesslog_2018_12_31.log
+15:10:10.071 [sync-1] [admin] INFO  i.g.a.m.h.a.SecurityConfiguration - Loading identity providers to handle user authentication
+15:10:10.180 [sync-1] [admin] INFO  i.g.a.m.h.a.s.i.IdentityProviderManagerImpl - Initializing identity providers for domain admin
+15:10:10.322 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger.json'], []
+15:10:10.450 [sync-1] [admin] INFO  i.g.a.m.h.a.s.i.IdentityProviderManagerImpl - 	Initializing identity provider: Inline users [inline-am-idp]
+15:10:10.882 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e0a864d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cb2918c, org.springframework.security.web.header.HeaderWriterFilter@4bd51d3e, org.springframework.web.filter.CorsFilter@440e3ce6, org.springframework.security.web.authentication.logout.LogoutFilter@4b0f2299, io.gravitee.am.management.handlers.management.api.spring.security.filter.JWTAuthenticationFilter@3e67f5f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c2584d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fcd7d3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fd53053, org.springframework.security.web.session.SessionManagementFilter@e4e1ef5, org.springframework.security.web.access.ExceptionTranslationFilter@30ca0779, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@80bfa9d]
+15:10:11.064 [graviteeio-node] [] INFO  i.g.a.m.h.m.a.c.CertificateManager - Initializing certificate providers
+15:10:16.305 [sync-1] [admin] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/authorize'], Ant [pattern='/login'], Ant [pattern='/login/callback'], Ant [pattern='/logout']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a37d825, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e03d64c, org.springframework.security.web.header.HeaderWriterFilter@4b439fd3, org.springframework.security.web.csrf.CsrfFilter@7638b0b4, org.springframework.security.web.authentication.logout.LogoutFilter@33096bb, io.gravitee.am.management.handlers.admin.filter.OAuth2ClientAuthenticationFilter@1e4cb83c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a04c2f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@455e704e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1234d231, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d421b77, org.springframework.security.web.session.SessionManagementFilter@78cd2b1f, org.springframework.security.web.access.ExceptionTranslationFilter@62df3339, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42a669b6]
+15:10:16.353 [sync-1] [admin] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/token'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bd2df66, org.springframework.security.web.context.SecurityContextPersistenceFilter@32ca9a1c, org.springframework.security.web.header.HeaderWriterFilter@5a128171, org.springframework.security.web.authentication.logout.LogoutFilter@25d2e56b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39803f46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67af1ac0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2978064d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1188a5b5, org.springframework.security.web.session.SessionManagementFilter@4d271c46, org.springframework.security.web.access.ExceptionTranslationFilter@7c453ea3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b9c3b82]
+15:10:16.615 [sync-1] [admin] INFO  o.e.j.server.handler.ContextHandler - Started i.g.a.m.j.h.s.SecurityDomainHandler@30795dbb{/admin,null,AVAILABLE}
+15:10:16.622 [sync-1] [admin] INFO  i.g.a.m.j.h.s.SecurityDomainHandlerCollection - Security domain admin has been been published on path /admin
+15:10:18.687 [graviteeio-node] [] INFO  o.e.j.server.handler.ContextHandler - Started i.g.a.m.j.h.ManagementContextHandler@158f4cfe{/management,null,AVAILABLE}
+15:10:18.709 [graviteeio-node] [] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@fddd7ae{HTTP/1.1,[http/1.1]}{0.0.0.0:8093}
+15:10:18.710 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - Started @38727ms
+15:10:18.711 [graviteeio-node] [] INFO  i.g.a.m.jetty.JettyHttpServer - HTTP Server is now started and listening on port 8093
+15:10:18.716 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: InitializerService
+15:10:18.718 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Upgrader service
+15:10:18.742 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.InitializeUpgrader
+15:10:18.748 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - Looking for a registered admin domain
+15:10:18.752 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - admin domain already exists. Apply required upgrades.
+15:10:18.822 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.ScopeUpgrader
+15:10:18.823 [graviteeio-node] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Applying scope upgrade
+15:10:18.911 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.CertificateUpgrader
+15:10:18.914 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.CertificateUpgrader - Applying certificate upgrade
+15:10:18.918 [Thread-18] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Looking for scopes for domain id[admin] name[admin]
+15:10:18.921 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.OpenIDScopeUpgrader
+15:10:18.964 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.OpenIDScopeUpgrader - Applying OIDC scope upgrade
+15:10:18.968 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API id[baef8a97-61a6-4cd6-af8a-9761a64cd62b] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 20054 ms.
+23:51:45.950 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+23:51:46.049 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-management-api/config/gravitee.yml
+23:51:46.622 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+23:51:47.129 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+23:51:47.148 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+23:51:47.166 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+23:51:47.168 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+23:51:47.171 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+23:51:47.176 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.management.repository.plugin.RepositoryPluginHandler
+23:51:47.187 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+23:51:47.190 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+23:51:52.605 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+23:51:52.622 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+23:51:54.853 [graviteeio-node] [] INFO  org.eclipse.jetty.util.log - Logging initialized @17308ms
+23:51:55.043 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener SecurityDomainHandlerCollection for event type class io.gravitee.am.management.core.event.DomainEvent
+23:51:55.431 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Management API...
+23:51:55.482 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API is now starting...
+23:51:55.483 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginEventListener
+23:51:55.491 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+23:51:55.492 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+23:51:55.500 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: PluginRegistry
+23:51:55.501 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+23:51:55.510 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+23:51:55.511 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-management-api/plugins
+23:51:55.535 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+23:51:55.853 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+23:51:55.895 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+23:51:55.955 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+23:51:55.962 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+23:51:55.987 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+23:51:55.992 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+23:51:56.021 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+23:51:56.032 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-management-api-services-sync-2.1.1.zip
+23:51:56.053 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-management-api-services-sync-2.1.1/gravitee-am-management-api-services-sync-2.1.1.jar
+23:51:56.064 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+23:51:56.159 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+23:51:56.172 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+23:51:56.181 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+23:51:56.183 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+23:51:56.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+23:51:56.198 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-node-services-monitoring-1.1.0.zip
+23:51:56.205 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+23:51:56.207 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+23:51:56.283 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+23:51:56.291 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-management-api/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+23:51:56.299 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-management-api/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+23:51:56.309 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+23:51:56.326 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+23:51:56.332 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+23:51:56.334 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+23:51:56.334 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+23:51:56.335 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+23:51:56.336 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+23:51:56.336 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+23:51:56.337 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+23:51:56.338 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+23:51:56.339 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+23:51:56.340 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+23:51:56.341 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+23:51:56.341 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+23:51:56.342 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+23:51:56.343 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+23:51:56.343 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+23:51:56.344 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+23:51:56.345 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+23:51:56.346 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+23:51:56.347 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+23:51:56.347 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+23:51:56.373 [graviteeio-node] [] INFO  i.g.a.m.r.p.RepositoryPluginHandler - Register a new repository: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+23:51:58.998 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+23:51:59.003 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+23:51:59.011 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+23:51:59.024 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+23:51:59.031 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+23:51:59.052 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+23:51:59.059 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+23:51:59.066 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+23:51:59.068 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+23:51:59.070 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+23:52:00.226 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+23:52:00.546 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.management.services.sync.ScheduledSyncService]
+23:52:01.083 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+23:52:01.089 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+23:52:01.090 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+23:52:01.094 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+23:52:01.095 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+23:52:01.106 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+23:52:01.117 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+23:52:01.126 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ServiceManager
+23:52:01.149 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+23:52:01.157 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+23:52:01.165 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+23:52:01.179 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+23:52:01.188 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+23:52:01.194 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+23:52:01.198 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+23:52:01.394 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+23:52:01.440 [graviteeio-node] [] INFO  i.g.a.m.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+23:52:01.522 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ManagementService
+23:52:01.529 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+23:52:01.629 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: ReporterManager
+23:52:01.632 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+23:52:01.634 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+23:52:01.648 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: HttpServer
+23:52:01.979 [graviteeio-node] [] INFO  i.g.a.m.core.http.HttpServerFactory - Loading instances for type io.gravitee.am.management.core.http.HttpServer
+23:52:02.049 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+23:52:02.307 [graviteeio-node] [] INFO  i.g.a.m.c.c.ContextFactoryRegistry - Loading instances for type io.gravitee.am.management.core.context.ContextFactory
+23:52:03.269 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+23:52:03.512 [graviteeio-node] [] INFO  o.e.j.server.AbstractNCSARequestLog - Opened /opt/graviteeio-am-management-api/logs/gravitee_accesslog_2018_12_31.log
+23:52:03.744 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+23:52:03.749 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+23:52:03.757 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18093
+23:52:06.115 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger.json'], []
+23:52:06.782 [graviteeio-node] [] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ed4bc, org.springframework.security.web.context.SecurityContextPersistenceFilter@512575e9, org.springframework.security.web.header.HeaderWriterFilter@15405bd6, org.springframework.web.filter.CorsFilter@6920b0bc, org.springframework.security.web.authentication.logout.LogoutFilter@77865933, io.gravitee.am.management.handlers.management.api.spring.security.filter.JWTAuthenticationFilter@65f651eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2373ad99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cbc2e3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69923ac3, org.springframework.security.web.session.SessionManagementFilter@5793b87, org.springframework.security.web.access.ExceptionTranslationFilter@1937eaff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f4a3a8d]
+23:52:07.083 [graviteeio-node] [] INFO  i.g.a.m.h.m.a.c.CertificateManager - Initializing certificate providers
+23:52:08.642 [sync-1] [admin] INFO  i.g.a.m.h.a.SecurityConfiguration - Loading identity providers to handle user authentication
+23:52:08.741 [sync-1] [admin] INFO  i.g.a.m.h.a.s.i.IdentityProviderManagerImpl - Initializing identity providers for domain admin
+23:52:08.822 [sync-1] [admin] INFO  i.g.a.m.h.a.s.i.IdentityProviderManagerImpl - 	Initializing identity provider: Inline users [inline-am-idp]
+23:52:16.805 [sync-1] [admin] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/authorize'], Ant [pattern='/login'], Ant [pattern='/login/callback'], Ant [pattern='/logout']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45a60498, org.springframework.security.web.context.SecurityContextPersistenceFilter@740d9db7, org.springframework.security.web.header.HeaderWriterFilter@8de6a71, org.springframework.security.web.csrf.CsrfFilter@ec3cd9b, org.springframework.security.web.authentication.logout.LogoutFilter@75c54048, io.gravitee.am.management.handlers.admin.filter.OAuth2ClientAuthenticationFilter@3aa96337, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@213a8395, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@184b2fa0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@633d433a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79626bb8, org.springframework.security.web.session.SessionManagementFilter@1861d1e4, org.springframework.security.web.access.ExceptionTranslationFilter@389a9600, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2508bde6]
+23:52:16.835 [sync-1] [admin] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/token'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21398fcf, org.springframework.security.web.context.SecurityContextPersistenceFilter@4444314c, org.springframework.security.web.header.HeaderWriterFilter@8c44c8f, org.springframework.security.web.authentication.logout.LogoutFilter@7e9fee0f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1019eb99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d002f44, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@578aa45f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@553269d4, org.springframework.security.web.session.SessionManagementFilter@4aff5efc, org.springframework.security.web.access.ExceptionTranslationFilter@c66b36b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44561521]
+23:52:17.103 [sync-1] [admin] INFO  o.e.j.server.handler.ContextHandler - Started i.g.a.m.j.h.s.SecurityDomainHandler@2c2b2a6c{/admin,null,AVAILABLE}
+23:52:17.104 [sync-1] [admin] INFO  i.g.a.m.j.h.s.SecurityDomainHandlerCollection - Security domain admin has been been published on path /admin
+23:52:17.371 [graviteeio-node] [] INFO  o.e.j.server.handler.ContextHandler - Started i.g.a.m.j.h.ManagementContextHandler@1d5d5621{/management,null,AVAILABLE}
+23:52:17.409 [graviteeio-node] [] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@9f892f0{HTTP/1.1,[http/1.1]}{0.0.0.0:8093}
+23:52:17.423 [graviteeio-node] [] INFO  org.eclipse.jetty.server.Server - Started @39900ms
+23:52:17.424 [graviteeio-node] [] INFO  i.g.a.m.jetty.JettyHttpServer - HTTP Server is now started and listening on port 8093
+23:52:17.425 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - 	Starting component: InitializerService
+23:52:17.439 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Upgrader service
+23:52:17.458 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.InitializeUpgrader
+23:52:17.469 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - Looking for a registered admin domain
+23:52:17.498 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.InitializeUpgrader - admin domain already exists. Apply required upgrades.
+23:52:17.679 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.ScopeUpgrader
+23:52:17.684 [graviteeio-node] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Applying scope upgrade
+23:52:17.869 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.CertificateUpgrader
+23:52:17.870 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.CertificateUpgrader - Applying certificate upgrade
+23:52:17.903 [graviteeio-node] [] INFO  i.g.a.m.s.impl.UpgraderServiceImpl - Running upgrader bean io.gravitee.am.management.service.impl.upgrades.OpenIDScopeUpgrader
+23:52:17.904 [graviteeio-node] [] INFO  i.g.a.m.s.i.u.OpenIDScopeUpgrader - Applying OIDC scope upgrade
+23:52:17.906 [Thread-18] [] INFO  i.g.a.m.s.i.upgrades.ScopeUpgrader - Looking for scopes for domain id[admin] name[admin]
+23:52:17.910 [graviteeio-node] [] INFO  i.g.a.m.s.node.ManagementNode - Gravitee.io - AM Management API id[04eb93a6-2f54-4adc-ab93-a62f545adca6] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 22426 ms.

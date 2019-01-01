@@ -1,0 +1,660 @@
+13:25:03.647 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+13:25:03.723 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-gateway/config/gravitee.yml
+13:25:04.057 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+13:25:04.374 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+13:25:04.391 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+13:25:04.396 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+13:25:04.400 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.gateway.repository.plugins.RepositoryPluginHandler
+13:25:04.418 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+13:25:04.420 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+13:25:04.422 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+13:25:04.430 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+13:25:09.580 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+13:25:09.580 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+13:25:13.165 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Gateway...
+13:25:13.178 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway is now starting...
+13:25:13.178 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginEventListener
+13:25:13.178 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:25:13.179 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:25:13.180 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginRegistry
+13:25:13.192 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:25:13.192 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:25:13.192 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-gateway/plugins
+13:25:13.283 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+13:25:13.568 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+13:25:13.726 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+13:25:13.788 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+13:25:13.802 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-gateway-services-sync-2.1.1.zip
+13:25:13.811 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-gateway-services-sync-2.1.1/gravitee-am-gateway-services-sync-2.1.1.jar
+13:25:13.833 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+13:25:13.875 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+13:25:13.877 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+13:25:13.888 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+13:25:13.913 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+13:25:13.988 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+13:25:14.008 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+13:25:14.028 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+13:25:14.041 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+13:25:14.047 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+13:25:14.048 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-monitoring-1.1.0.zip
+13:25:14.064 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+13:25:14.079 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+13:25:14.110 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+13:25:14.130 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+13:25:14.135 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+13:25:14.137 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+13:25:14.187 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+13:25:14.187 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+13:25:14.187 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+13:25:14.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+13:25:14.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+13:25:14.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+13:25:14.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+13:25:14.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+13:25:14.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+13:25:14.198 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+13:25:14.198 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+13:25:14.198 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+13:25:14.198 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+13:25:14.198 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+13:25:14.199 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+13:25:14.199 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+13:25:14.199 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+13:25:14.200 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+13:25:14.200 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+13:25:14.201 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+13:25:14.201 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+13:25:14.245 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Register a new repository plugin: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+13:25:14.252 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [MANAGEMENT] loaded by mongodb
+13:25:15.493 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+13:25:16.567 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@4d6f623d from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:16.624 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@5942ee04 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:16.794 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@c3c4c1c from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:16.794 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@17d238b1 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:16.859 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@28952dea from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:16.881 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@5a9800f8 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:16.883 [cluster-ClusterId{value='5c2a18bb8b87bc000114f7c3', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to mongodb:27017
+13:25:16.908 [cluster-ClusterId{value='5c2a18bb8b87bc000114f7c3', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=22687674}
+13:25:17.377 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:4}] to mongodb:27017
+13:25:17.447 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:2}] to mongodb:27017
+13:25:17.475 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:5}] to mongodb:27017
+13:25:17.481 [Thread-10] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:8}] to mongodb:27017
+13:25:17.487 [Thread-6] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:10}] to mongodb:27017
+13:25:17.572 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [OAUTH2] loaded by mongodb
+13:25:17.617 [Thread-15] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:9}] to mongodb:27017
+13:25:17.628 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:7}] to mongodb:27017
+13:25:17.628 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:13}] to mongodb:27017
+13:25:17.653 [Thread-13] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:3}] to mongodb:27017
+13:25:17.667 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:6}] to mongodb:27017
+13:25:17.814 [Thread-6] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:12}] to mongodb:27017
+13:25:17.816 [Thread-14] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:11}] to mongodb:27017
+13:25:17.818 [Thread-13] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:14}] to mongodb:27017
+13:25:17.834 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:15}] to mongodb:27017
+13:25:18.286 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+13:25:18.492 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@4ebadd3d from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:18.494 [cluster-ClusterId{value='5c2a18be8b87bc000114f7c4', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:16}] to mongodb:27017
+13:25:18.505 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@6ac97b84 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:25:18.509 [cluster-ClusterId{value='5c2a18be8b87bc000114f7c4', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=14122763}
+13:25:18.631 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:17}] to mongodb:27017
+13:25:18.639 [Thread-6] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:18}] to mongodb:27017
+13:25:18.677 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:19}] to mongodb:27017
+13:25:18.841 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:20}] to mongodb:27017
+13:25:19.107 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:21}] to mongodb:27017
+13:25:19.454 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+13:25:19.500 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+13:25:19.620 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+13:25:19.646 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+13:25:19.702 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+13:25:19.715 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+13:25:19.715 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+13:25:19.716 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+13:25:19.716 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+13:25:19.716 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+13:25:20.749 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.gateway.services.sync.ScheduledSyncService]
+13:25:21.285 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+13:25:21.578 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+13:25:21.578 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+13:25:21.578 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+13:25:21.580 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+13:25:21.581 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+13:25:21.612 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+13:25:21.612 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+13:25:21.612 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ServiceManager
+13:25:21.613 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+13:25:21.613 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+13:25:21.618 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+13:25:21.638 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+13:25:21.662 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+13:25:21.663 [graviteeio-node] [] INFO  i.g.a.g.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+13:25:21.791 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+13:25:21.802 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+13:25:21.802 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+13:25:21.999 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ManagementService
+13:25:22.002 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+13:25:22.099 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ReporterManager
+13:25:22.099 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+13:25:22.115 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+13:25:22.153 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: Reactor
+13:25:22.154 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.am.gateway.reactor.impl.DefaultReactor
+13:25:22.169 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener DefaultReactor for event type class io.gravitee.am.gateway.core.event.DomainEvent
+13:25:22.169 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: VertxEmbeddedContainer
+13:25:22.169 [graviteeio-node] [] INFO  i.g.a.g.vertx.VertxEmbeddedContainer - Starting Vertx container and deploy Gateway Verticles [8 instance(s)]
+13:25:22.297 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+13:25:22.925 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway id[29aeeabb-eede-44cb-aeea-bbeedea4cb75] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 9743 ms.
+13:25:23.987 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:25:23.987 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:25:23.988 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:25:23.988 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:25:23.988 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:25:23.988 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:25:23.987 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+13:25:24.005 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+13:25:24.005 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:25:24.029 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18092
+13:25:24.029 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:26:29.859 [graviteeio-finalizer] [] INFO  i.g.a.g.container.GatewayContainer - Shutting-down Gravitee.io - AM Gateway...
+13:26:29.859 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway is stopping
+13:26:29.862 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: VertxEmbeddedContainer
+13:26:29.873 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: Reactor
+13:26:29.873 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.am.gateway.reactor.impl.DefaultReactor
+13:26:29.873 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: ReporterManager
+13:26:29.874 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Reporter service
+13:26:29.874 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: ManagementService
+13:26:29.874 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Management API service
+13:26:29.874 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: ServiceManager
+13:26:29.875 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Plugins - Services Manager
+13:26:29.875 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor
+13:26:29.875 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.875 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.892 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.892 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.893 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.893 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.897 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:29.899 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:29.927 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Monitoring Service
+13:26:29.927 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor : DONE
+13:26:29.927 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Sync Service
+13:26:29.927 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Health-check service
+13:26:29.928 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: PluginRegistry
+13:26:29.928 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:26:29.928 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: PluginEventListener
+13:26:29.928 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginEventListener
+13:26:29.928 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway stopped
+13:26:29.938 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.938 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:29.938 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+13:26:29.940 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:29.946 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:29.946 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:29.958 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:30.060 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+13:26:49.770 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+13:26:49.789 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-gateway/config/gravitee.yml
+13:26:50.388 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+13:26:50.671 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+13:26:50.690 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+13:26:50.708 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+13:26:50.712 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.gateway.repository.plugins.RepositoryPluginHandler
+13:26:50.713 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+13:26:50.715 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+13:26:50.716 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+13:26:50.718 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+13:26:55.932 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+13:26:55.932 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+13:26:59.097 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Gateway...
+13:26:59.098 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway is now starting...
+13:26:59.098 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginEventListener
+13:26:59.099 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+13:26:59.099 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+13:26:59.101 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginRegistry
+13:26:59.102 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+13:26:59.102 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+13:26:59.102 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-gateway/plugins
+13:26:59.191 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+13:26:59.698 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+13:26:59.740 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+13:26:59.840 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+13:26:59.854 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-gateway-services-sync-2.1.1.zip
+13:26:59.882 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-gateway-services-sync-2.1.1/gravitee-am-gateway-services-sync-2.1.1.jar
+13:26:59.885 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+13:26:59.916 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+13:26:59.918 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+13:26:59.963 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+13:26:59.966 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+13:27:00.022 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+13:27:00.037 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+13:27:00.054 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+13:27:00.056 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+13:27:00.069 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+13:27:00.070 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-monitoring-1.1.0.zip
+13:27:00.103 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+13:27:00.105 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+13:27:00.172 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+13:27:00.177 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+13:27:00.194 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+13:27:00.197 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+13:27:00.212 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+13:27:00.212 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+13:27:00.212 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+13:27:00.212 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+13:27:00.213 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+13:27:00.213 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+13:27:00.213 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+13:27:00.230 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+13:27:00.230 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+13:27:00.230 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+13:27:00.231 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+13:27:00.231 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+13:27:00.231 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+13:27:00.232 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+13:27:00.233 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+13:27:00.233 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+13:27:00.233 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+13:27:00.233 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+13:27:00.233 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+13:27:00.234 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+13:27:00.235 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+13:27:00.340 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Register a new repository plugin: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+13:27:00.341 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [MANAGEMENT] loaded by mongodb
+13:27:02.051 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+13:27:03.257 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@4d6f623d from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:27:03.337 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@5942ee04 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:27:03.437 [cluster-ClusterId{value='5c2a19268b87bc00016e7455', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to mongodb:27017
+13:27:03.457 [cluster-ClusterId{value='5c2a19268b87bc00016e7455', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=14654752}
+13:27:03.989 [Thread-6] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:3}] to mongodb:27017
+13:27:04.036 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2}] to mongodb:27017
+13:27:04.085 [Thread-12] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:5}] to mongodb:27017
+13:27:04.085 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:4}] to mongodb:27017
+13:27:04.156 [Thread-13] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:7}] to mongodb:27017
+13:27:04.156 [Thread-10] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:6}] to mongodb:27017
+13:27:04.235 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:9}] to mongodb:27017
+13:27:04.276 [Thread-14] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:8}] to mongodb:27017
+13:27:04.448 [Thread-16] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:10}] to mongodb:27017
+13:27:04.619 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [OAUTH2] loaded by mongodb
+13:27:04.926 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+13:27:05.052 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@6a74d228 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:27:05.065 [cluster-ClusterId{value='5c2a19288b87bc00016e7456', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:11}] to mongodb:27017
+13:27:05.113 [cluster-ClusterId{value='5c2a19288b87bc00016e7456', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=48028564}
+13:27:05.146 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@349d0836 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+13:27:05.186 [Thread-16] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:12}] to mongodb:27017
+13:27:05.336 [Thread-13] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:13}] to mongodb:27017
+13:27:05.425 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:15}] to mongodb:27017
+13:27:05.456 [Thread-6] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:14}] to mongodb:27017
+13:27:05.798 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+13:27:05.825 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+13:27:05.829 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+13:27:05.831 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+13:27:05.834 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+13:27:05.875 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+13:27:05.876 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+13:27:05.876 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+13:27:05.876 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+13:27:05.876 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.gateway.services.sync.ScheduledSyncService]
+13:27:06.377 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+13:27:06.578 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+13:27:06.798 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+13:27:06.798 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+13:27:06.798 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+13:27:06.806 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+13:27:06.806 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+13:27:06.809 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+13:27:06.809 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+13:27:06.809 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ServiceManager
+13:27:06.810 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+13:27:06.810 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+13:27:06.810 [graviteeio-node] [] INFO  i.g.a.g.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+13:27:06.889 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+13:27:06.890 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+13:27:06.925 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+13:27:06.992 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+13:27:07.011 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+13:27:07.018 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+13:27:07.018 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ManagementService
+13:27:07.019 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+13:27:07.232 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+13:27:07.232 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ReporterManager
+13:27:07.233 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+13:27:07.284 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: Reactor
+13:27:07.285 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.am.gateway.reactor.impl.DefaultReactor
+13:27:07.335 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener DefaultReactor for event type class io.gravitee.am.gateway.core.event.DomainEvent
+13:27:07.335 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: VertxEmbeddedContainer
+13:27:07.335 [graviteeio-node] [] INFO  i.g.a.g.vertx.VertxEmbeddedContainer - Starting Vertx container and deploy Gateway Verticles [8 instance(s)]
+13:27:07.458 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+13:27:08.117 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway id[9b013fd9-dc86-4d79-813f-d9dc869d79c6] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 9017 ms.
+13:27:09.295 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+13:27:09.304 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+13:27:09.329 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18092
+13:27:09.330 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:27:09.335 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:27:09.335 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:27:09.336 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:27:09.336 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:27:09.346 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:27:09.346 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+13:27:09.347 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+14:52:42.741 [graviteeio-finalizer] [] INFO  i.g.a.g.container.GatewayContainer - Shutting-down Gravitee.io - AM Gateway...
+14:52:42.743 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway is stopping
+14:52:42.765 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: VertxEmbeddedContainer
+14:52:42.797 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: Reactor
+14:52:42.800 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.am.gateway.reactor.impl.DefaultReactor
+14:52:42.806 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: ReporterManager
+14:52:42.810 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.811 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.812 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.812 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.812 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.812 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.812 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Reporter service
+14:52:42.813 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.813 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - Stopping HTTP Server...
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: ManagementService
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Management API service
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: ServiceManager
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Plugins - Services Manager
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Sync Service
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Node Health-check service
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service Monitoring Service
+14:52:42.814 [graviteeio-finalizer] [] INFO  i.g.n.s.monitoring.MonitoringService - Stop node monitor : DONE
+14:52:42.816 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: PluginRegistry
+14:52:42.816 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginRegistryImpl
+14:52:42.817 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - 	Stopping component: PluginEventListener
+14:52:42.817 [graviteeio-finalizer] [] INFO  i.g.common.service.AbstractService - Destroying service io.gravitee.plugin.core.internal.PluginEventListener
+14:52:42.817 [graviteeio-finalizer] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway stopped
+14:52:42.844 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+14:52:42.845 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+14:52:42.845 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+14:52:42.845 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+14:52:42.846 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+14:52:42.846 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+14:52:42.846 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+14:52:42.880 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server has been correctly stopped
+15:09:48.028 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+15:09:48.069 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-gateway/config/gravitee.yml
+15:09:48.476 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+15:09:48.711 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+15:09:48.717 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+15:09:48.724 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+15:09:48.728 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.gateway.repository.plugins.RepositoryPluginHandler
+15:09:48.731 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+15:09:48.739 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+15:09:48.741 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+15:09:48.745 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+15:09:53.303 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+15:09:53.303 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+15:09:55.870 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Gateway...
+15:09:55.880 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway is now starting...
+15:09:55.882 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginEventListener
+15:09:55.885 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+15:09:55.890 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+15:09:55.893 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginRegistry
+15:09:55.893 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+15:09:55.893 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+15:09:55.894 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-gateway/plugins
+15:09:55.929 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+15:09:56.178 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+15:09:56.242 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+15:09:56.305 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+15:09:56.309 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-gateway-services-sync-2.1.1.zip
+15:09:56.338 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-gateway-services-sync-2.1.1/gravitee-am-gateway-services-sync-2.1.1.jar
+15:09:56.339 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+15:09:56.368 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+15:09:56.369 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+15:09:56.404 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+15:09:56.406 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+15:09:56.477 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+15:09:56.489 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+15:09:56.500 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+15:09:56.501 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+15:09:56.552 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+15:09:56.560 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-monitoring-1.1.0.zip
+15:09:56.567 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+15:09:56.568 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+15:09:56.640 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+15:09:56.642 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+15:09:56.660 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+15:09:56.661 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+15:09:56.680 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+15:09:56.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+15:09:56.682 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+15:09:56.682 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+15:09:56.684 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+15:09:56.684 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+15:09:56.720 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Register a new repository plugin: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+15:09:56.720 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [MANAGEMENT] loaded by mongodb
+15:09:57.537 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+15:09:58.050 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@e93f3d5 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+15:09:58.138 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@757194dc from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+15:09:58.170 [cluster-ClusterId{value='5c2a31459194be000192b8e5', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to mongodb:27017
+15:09:58.194 [cluster-ClusterId{value='5c2a31459194be000192b8e5', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=13164862}
+15:09:58.441 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:2}] to mongodb:27017
+15:09:58.443 [Thread-12] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:4}] to mongodb:27017
+15:09:58.449 [Thread-10] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3}] to mongodb:27017
+15:09:58.526 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:5}] to mongodb:27017
+15:09:58.540 [Thread-14] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:6}] to mongodb:27017
+15:09:58.566 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:7}] to mongodb:27017
+15:09:58.610 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:8}] to mongodb:27017
+15:09:58.863 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [OAUTH2] loaded by mongodb
+15:09:59.126 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+15:09:59.200 [cluster-ClusterId{value='5c2a31479194be000192b8e6', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:9}] to mongodb:27017
+15:09:59.206 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@65327f5 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+15:09:59.208 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@2adddc06 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+15:09:59.216 [cluster-ClusterId{value='5c2a31479194be000192b8e6', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=16127128}
+15:09:59.258 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:10}] to mongodb:27017
+15:09:59.285 [Thread-15] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:12}] to mongodb:27017
+15:09:59.290 [Thread-10] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:11}] to mongodb:27017
+15:09:59.516 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+15:09:59.528 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+15:09:59.543 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+15:09:59.548 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+15:09:59.576 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+15:09:59.583 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+15:09:59.583 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+15:09:59.583 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+15:09:59.583 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+15:09:59.585 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.gateway.services.sync.ScheduledSyncService]
+15:10:00.283 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+15:10:00.492 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+15:10:00.626 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+15:10:00.644 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+15:10:00.644 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+15:10:00.647 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+15:10:00.660 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+15:10:00.670 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+15:10:00.681 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+15:10:00.681 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ServiceManager
+15:10:00.682 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+15:10:00.683 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+15:10:00.684 [graviteeio-node] [] INFO  i.g.a.g.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+15:10:00.762 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+15:10:00.762 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+15:10:00.771 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+15:10:00.835 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+15:10:00.871 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+15:10:00.891 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+15:10:00.891 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ManagementService
+15:10:00.891 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+15:10:01.016 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+15:10:01.017 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ReporterManager
+15:10:01.017 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+15:10:01.040 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: Reactor
+15:10:01.040 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.am.gateway.reactor.impl.DefaultReactor
+15:10:01.046 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener DefaultReactor for event type class io.gravitee.am.gateway.core.event.DomainEvent
+15:10:01.046 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: VertxEmbeddedContainer
+15:10:01.048 [graviteeio-node] [] INFO  i.g.a.g.vertx.VertxEmbeddedContainer - Starting Vertx container and deploy Gateway Verticles [8 instance(s)]
+15:10:01.129 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+15:10:01.768 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway id[fccb0913-9fc3-4df7-8b09-139fc32df7dc] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 5853 ms.
+15:10:02.277 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+15:10:02.277 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+15:10:02.299 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+15:10:02.298 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18092
+15:10:02.299 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+15:10:02.300 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+15:10:02.300 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+15:10:02.300 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+15:10:02.302 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+15:10:02.302 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+15:10:02.300 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:44.705 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+23:51:44.735 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /opt/graviteeio-am-gateway/config/gravitee.yml
+23:51:45.090 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+23:51:45.223 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+23:51:45.231 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 6 plugin handler(s):
+23:51:45.235 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.idp.plugin.IdentityProviderPluginHandler
+23:51:45.239 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.gateway.repository.plugins.RepositoryPluginHandler
+23:51:45.241 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+23:51:45.243 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.certificate.plugin.CertificatePluginHandler
+23:51:45.246 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.am.plugins.extensiongrant.plugin.ExtensionGrantPluginHandler
+23:51:45.247 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+23:51:49.916 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+23:51:49.932 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Loading repository for scope OAUTH2: mongodb
+23:51:52.408 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - AM Gateway...
+23:51:52.421 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway is now starting...
+23:51:52.421 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginEventListener
+23:51:52.422 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+23:51:52.422 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+23:51:52.424 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: PluginRegistry
+23:51:52.425 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+23:51:52.425 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+23:51:52.425 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /opt/graviteeio-am-gateway/plugins
+23:51:52.474 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-mongo-2.1.1.zip
+23:51:52.882 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-mongo-2.1.1/gravitee-am-identityprovider-mongo-2.1.1.jar
+23:51:52.921 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-ldap-2.1.1.zip
+23:51:52.951 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-ldap-2.1.1/gravitee-am-identityprovider-ldap-2.1.1.jar
+23:51:52.952 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-gateway-services-sync-2.1.1.zip
+23:51:52.986 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-gateway-services-sync-2.1.1/gravitee-am-gateway-services-sync-2.1.1.jar
+23:51:53.003 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-oauth2-generic-2.1.1.zip
+23:51:53.026 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-oauth2-generic-2.1.1/gravitee-am-identityprovider-oauth2-generic-2.1.1.jar
+23:51:53.027 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-extensiongrant-jwtbearer-2.1.1.zip
+23:51:53.070 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-extensiongrant-jwtbearer-2.1.1/gravitee-am-extensiongrant-jwtbearer-2.1.1.jar
+23:51:53.072 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-certificate-javakeystore-2.1.1.zip
+23:51:53.203 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-certificate-javakeystore-2.1.1/gravitee-am-certificate-javakeystore-2.1.1.jar
+23:51:53.219 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-github-2.1.1.zip
+23:51:53.232 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-github-2.1.1/gravitee-am-identityprovider-github-2.1.1.jar
+23:51:53.241 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-healthcheck-1.1.0.zip
+23:51:53.252 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-healthcheck-1.1.0/gravitee-node-services-healthcheck-1.1.0.jar
+23:51:53.253 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-node-services-monitoring-1.1.0.zip
+23:51:53.285 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-node-services-monitoring-1.1.0/gravitee-node-services-monitoring-1.1.0.jar
+23:51:53.285 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-repository-mongodb-2.1.1.zip
+23:51:53.454 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-repository-mongodb-2.1.1/gravitee-am-repository-mongodb-2.1.1.jar
+23:51:53.457 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /opt/graviteeio-am-gateway/plugins/gravitee-am-identityprovider-inline-2.1.1.zip
+23:51:53.473 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /opt/graviteeio-am-gateway/plugins/.work/gravitee-am-identityprovider-inline-2.1.1/gravitee-am-identityprovider-inline-2.1.1.jar
+23:51:53.473 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+23:51:53.501 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync-service [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.1.0] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.1.0] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-am-mongodb [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mongo-am-idp [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ldap-am-idp [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-generic-am-idp [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> github-am-idp [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> inline-am-idp [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> javakeystore-am-certificate [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwtbearer-am-extension-grant [2.1.1] has been loaded
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+23:51:53.502 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+23:51:53.532 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Register a new repository plugin: repository-am-mongodb [io.gravitee.am.repository.mongodb.MongoRepository]
+23:51:53.536 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [MANAGEMENT] loaded by mongodb
+23:51:54.638 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+23:51:55.343 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@e93f3d5 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:55.402 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@757194dc from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:55.577 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@3d7cc3cb from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:55.584 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@35e478f from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:55.621 [cluster-ClusterId{value='5c2aab9a97a1c000018cca6f', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to mongodb:27017
+23:51:55.626 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@143d9a93 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:55.645 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@40226788 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:55.645 [cluster-ClusterId{value='5c2aab9a97a1c000018cca6f', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=21674837}
+23:51:55.897 [Thread-12] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:8}] to mongodb:27017
+23:51:55.898 [Thread-11] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:7}] to mongodb:27017
+23:51:55.900 [Thread-9] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:4}] to mongodb:27017
+23:51:55.909 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:6}] to mongodb:27017
+23:51:55.910 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:3}] to mongodb:27017
+23:51:55.924 [Thread-6] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:5}] to mongodb:27017
+23:51:55.961 [Thread-10] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2}] to mongodb:27017
+23:51:56.013 [Thread-13] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:9}] to mongodb:27017
+23:51:56.064 [Thread-11] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:10}] to mongodb:27017
+23:51:56.195 [graviteeio-node] [] INFO  i.g.a.g.r.p.RepositoryPluginHandler - Repository [OAUTH2] loaded by mongodb
+23:51:56.400 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[mongodb:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='5000 ms', maxWaitQueueSize=500}
+23:51:56.453 [cluster-ClusterId{value='5c2aab9c97a1c000018cca70', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:11}] to mongodb:27017
+23:51:56.454 [cluster-ClusterId{value='5c2aab9c97a1c000018cca70', description='null'}-mongodb:27017] [] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongodb:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 18]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1223646}
+23:51:56.459 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@72458efc from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:56.460 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.async.client.ClientSessionHelper$1@36bc415e from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=mongodb:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 5000 ms before timing out
+23:51:56.509 [Thread-8] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:12}] to mongodb:27017
+23:51:56.580 [Thread-13] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:13}] to mongodb:27017
+23:51:56.582 [Thread-7] [] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:14}] to mongodb:27017
+23:51:56.778 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+23:51:56.797 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: mongo-am-idp [io.gravitee.am.identityprovider.mongo.MongoIdentityProvider]
+23:51:56.806 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: ldap-am-idp [io.gravitee.am.identityprovider.ldap.LdapIdentityProvider]
+23:51:56.818 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: github-am-idp [io.gravitee.am.identityprovider.github.GithubIdentityProvider]
+23:51:56.822 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: oauth2-generic-am-idp [io.gravitee.am.identityprovider.oauth2.OAuth2GenericIdentityProvider]
+23:51:56.823 [graviteeio-node] [] INFO  i.g.a.p.i.p.IdentityProviderPluginHandler - Register a new identity provider plugin: inline-am-idp [io.gravitee.am.identityprovider.inline.InlineIdentityProvider]
+23:51:56.823 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+23:51:56.824 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+23:51:56.824 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+23:51:56.824 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync-service [io.gravitee.am.gateway.services.sync.ScheduledSyncService]
+23:51:57.497 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+23:51:57.687 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+23:51:57.873 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+23:51:57.873 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+23:51:57.873 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+23:51:57.875 [graviteeio-node] [] INFO  i.g.a.p.c.p.CertificatePluginHandler - Register a new certificate plugin: javakeystore-am-certificate [io.gravitee.am.certificate.javakeystore.JavaKeyStore]
+23:51:57.875 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+23:51:57.909 [graviteeio-node] [] INFO  i.g.a.p.e.p.ExtensionGrantPluginHandler - Register a new extension grant plugin: jwtbearer-am-extension-grant [io.gravitee.am.extensiongrant.jwtbearer.JwtBearerExtensionGrant]
+23:51:57.909 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+23:51:57.909 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ServiceManager
+23:51:57.910 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+23:51:57.910 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Sync Service
+23:51:57.910 [graviteeio-node] [] INFO  i.g.a.g.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+23:51:57.956 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+23:51:57.956 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+23:51:57.969 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+23:51:58.021 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+23:51:58.042 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+23:51:58.072 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+23:51:58.072 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ManagementService
+23:51:58.102 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+23:51:58.271 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: ReporterManager
+23:51:58.282 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+23:51:58.283 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+23:51:58.299 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: Reactor
+23:51:58.299 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.am.gateway.reactor.impl.DefaultReactor
+23:51:58.324 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener DefaultReactor for event type class io.gravitee.am.gateway.core.event.DomainEvent
+23:51:58.324 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - 	Starting component: VertxEmbeddedContainer
+23:51:58.325 [graviteeio-node] [] INFO  i.g.a.g.vertx.VertxEmbeddedContainer - Starting Vertx container and deploy Gateway Verticles [8 instance(s)]
+23:51:58.349 [vert.x-eventloop-thread-2] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - 	There is no reporter to start
+23:51:58.832 [graviteeio-node] [] INFO  i.g.am.gateway.node.GatewayNode - Gravitee.io - AM Gateway id[893bc8f9-528d-4f43-bbc8-f9528d6f4308] version[2.1.1] pid[1] build[210#${env.GIT_COMMIT}] jvm[Oracle Corporation/OpenJDK 64-Bit Server VM/25.181-b13] started in 6394 ms.
+23:51:59.538 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET / [io.gravitee.node.management.http.node.NodeEndpoint]
+23:51:59.539 [vert.x-eventloop-thread-5] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:59.539 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /configuration [io.gravitee.node.management.http.configuration.ConfigurationEndpoint]
+23:51:59.539 [vert.x-eventloop-thread-4] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:59.539 [vert.x-eventloop-thread-7] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:59.540 [vert.x-eventloop-thread-2] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:59.540 [vert.x-eventloop-thread-1] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:59.542 [vert.x-eventloop-thread-6] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:59.542 [vert.x-eventloop-thread-3] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
+23:51:59.543 [vert.x-eventloop-thread-0] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - HTTP listener for Node Management bind to port TCP:18092
+23:51:59.543 [vert.x-eventloop-thread-0] [] INFO  i.g.a.gateway.vertx.GraviteeVerticle - HTTP Server is now listening for requests on port 8092
